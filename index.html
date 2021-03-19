@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+<title>jquery hide show</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    //possiamo utilizzare nuove istruzioni jquery
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide();   //hide("slow")   hide("fast")   hide("5000")
+        });
+
+        $("#show").click(function(){
+            $("p").show();
+        })
+
+        $("#hideimg").click(function(){
+            $("img").hide();
+        });
+
+        $("#showimg").click(function(){
+            $("img").show();
+        })
+    });
+
+
+</script>
+<body>
+<p>Clicca i bottoni per farmi apparire o scomparire</p>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<br>
+<br>
+<br>
+<br>
+<img src="shy.png" alt="">
+<br>
+<button id="hideimg">Hide</button>
+<button id="showimg">Show</button>
+</body>
+</html> 
